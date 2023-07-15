@@ -1,0 +1,118 @@
+/*  Color pallete */
+/* Linear gradient */
+/* Animated linear gradient */
+/* Font family */
+/* Animation background */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+* {
+  box-sizing: border-box;
+  color: #0b2545 !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #5dade2, #1f618d);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 16px !important;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+p,
+span,
+a {
+  margin-bottom: 10px !important;
+  font-family: "Quicksand", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+p {
+  clear: both;
+}
+
+a {
+  font-weight: 600 !important;
+  transition: all 0.5s ease-in-out !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #87ceeb !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.username {
+  padding-bottom: 14px;
+  position: relative;
+}
+.username::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #87ceeb, #1f618d, #87ceeb);
+  background-size: 200% 100%;
+  animation: 5s backgroundAnimation linear infinite;
+}
+
+.card {
+  min-height: 100%;
+  border-color: #0b2545 !important;
+  background-color: transparent !important;
+}
+
+.card-body {
+  flex: 0 0 auto !important;
+  margin: auto 0 0 !important;
+}
+
+.instagram-post-reel,
+.instagram-post-video,
+.instagram-post-image {
+  padding: 16px 16px 0;
+}
+.instagram-post-reel video,
+.instagram-post-reel img,
+.instagram-post-video video,
+.instagram-post-video img,
+.instagram-post-image video,
+.instagram-post-image img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  max-width: 480px;
+  vertical-align: middle;
+  object-fit: cover;
+  object-position: center;
+  font-family: "object-fit: cover; object-position: center;";
+}
+
+.instagram-post-reel {
+  height: 256px;
+}
+.instagram-post-reel a {
+  font-size: 22px;
+  line-height: 256px;
+}
+
+/*# sourceMappingURL=style.css.map */

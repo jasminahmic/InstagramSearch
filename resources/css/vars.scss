@@ -1,0 +1,34 @@
+/*  Color pallete */
+
+$sky-blue-color: #87ceeb;
+$baby-blue-color: #5dade2;
+$dodger-color: #3498db;
+$denim-color: #1f618d;
+$midnight-blue-color: #0b2545;
+
+/* Linear gradient */
+
+$lg-background: linear-gradient(to right, $baby-blue-color, $denim-color);
+
+/* Animated linear gradient */
+
+$lg-animation: linear-gradient(to right, $sky-blue-color, $denim-color, $sky-blue-color);
+
+/* Font family */
+
+$font-roboto: 'Roboto', sans-serif;
+$font-quicksand: 'Quicksand', sans-serif;
+
+/* Animation background */
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
