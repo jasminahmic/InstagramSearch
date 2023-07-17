@@ -24,6 +24,7 @@ h6 {
 
 p,
 span,
+label,
 a {
   margin-bottom: 10px !important;
   font-family: $font-quicksand !important;
@@ -43,6 +44,11 @@ a {
     color: $sky-blue-color !important;
     transition: all .5s ease-in-out !important;
   }
+}
+
+input {
+  font-family: $font-quicksand !important;
+  font-weight: 400 !important;
 }
 
 .username {
@@ -101,4 +107,14 @@ a {
     font-size: 22px;
     line-height: 256px;
   }
+}
+
+.form-control:focus {
+  border: var(--bs-border-width) solid var(--bs-border-color) !important;
+  box-shadow: none !important;
+}
+
+.input-group-text {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
