@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <title>Instagram search</title>
+  </head>
+  <body>
+    <div class="wrap min-vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 g-5">
+            <h1 class="username text-center">Instagram search</h1>
+          </div>
+          <div class="col-12 g-5">
+            <div class="card px-sm-5 px-3 py-5">
+              <form action="instagram-result.php" method="POST">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="form-group">
+                      <label class="sr-only mb-1">Type instagram username for search</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><span class="m-0">@</span></div>
+                        </div>
+                        <input id="searchUsername" type="text" class="form-control" name="search_username" placeholder="Username">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex justify-content-between align-items-end">
+                    <button type="submit">SEARCH</button>
+                  </div>
+                </div>
+              </form> 
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </body>
+</html>
