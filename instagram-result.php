@@ -21,7 +21,8 @@
           $apiKey = $config['API_KEY'];
           $pageID = $config['PAGE_ID'];
           $username = $_POST['search_username'];
-          $url = "https://graph.facebook.com/v16.0/{$pageID}?fields=business_discovery.username({$username}){media{id,caption,comments_count,like_count,media_url,permalink,timestamp,username}}&access_token={$apiKey}";     
+          $limit = $_POST['search_number'];
+          $url = "https://graph.facebook.com/v16.0/{$pageID}?fields=business_discovery.username({$username}){media.limit($limit){id,caption,comments_count,like_count,media_url,permalink,timestamp,username}}&access_token={$apiKey}";     
           $response = file_get_contents($url);
 
           if ($response) {

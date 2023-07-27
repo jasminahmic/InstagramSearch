@@ -112,11 +112,14 @@ input {
 }
 
 .instagram-post-reel {
-  height: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 480px;
 
   a {
+    margin-bottom: 0 !important;
     font-size: 22px;
-    line-height: 256px;
   }
 }
 

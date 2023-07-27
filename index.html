@@ -14,14 +14,14 @@
     <div class="wrap min-vh-100 d-flex align-items-center">
       <div class="container">
         <div class="row">
-          <div class="col-12 g-5">
+          <div class="col-12">
             <h1 class="username text-center">Instagram search</h1>
           </div>
           <div class="col-12 g-5">
             <div class="card px-sm-5 px-3 py-5">
               <form action="instagram-result.php" method="POST">
                 <div class="row">
-                  <div class="col-md-9">
+                  <div class="col-md-12">
                     <div class="form-group">
                       <label class="sr-only mb-1">Type instagram username for search</label>
                       <div class="input-group">
@@ -32,7 +32,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3 d-flex justify-content-between align-items-end">
+                  <div class="col-md-8">
+                    <div class="form-outline">
+                      <label class="sr-only mb-1">Type the number of posts you want to display</label>
+                      <input id="searchNumber" type="number" min="1" max="100" value="1" class="form-control" name="search_number">
+                    </div>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-between align-items-end">
                     <button type="submit">SEARCH</button>
                   </div>
                 </div>
