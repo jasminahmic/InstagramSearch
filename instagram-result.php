@@ -99,6 +99,7 @@
             <?php
           }
         ?>
+        <hr class="hr my-4">
       </div>
     </div>
   </body>

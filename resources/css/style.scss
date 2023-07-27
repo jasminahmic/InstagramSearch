@@ -1,5 +1,5 @@
-@import './vars.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './vars.scss';
 
 * {
   box-sizing: border-box;
@@ -10,6 +10,25 @@ body {
   margin: 0;
   padding: 0;
   background: $lg-background;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $denim-color;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: $midnight-blue-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $sky-blue-color;
 }
 
 h1,
@@ -30,10 +49,6 @@ a {
   margin-bottom: 10px !important;
   font-family: $font-quicksand !important;
   font-weight: 400 !important;
-}
-
-p {
-  clear: both;
 }
 
 a {
@@ -86,6 +101,10 @@ input {
   min-height: 100%;
   border-color: $midnight-blue-color !important;
   background-color: transparent !important;
+
+  p {
+    clear: both;
+  }
 }
 
 .card-body {
@@ -140,11 +159,11 @@ button {
   
   position: relative;
   
-  padding: 2px 8px;
+  padding: 4px 8px;
   border: none;
   border-radius: 8px;
   
-  background: $dodger-color;
+  background: $baby-blue-color;
   background-repeat: no-repeat;
   
   font-size: 18px;
@@ -155,22 +174,8 @@ button {
   overflow: hidden;
   transition: all .3s ease-in-out;
 
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 100%;
-  
-    background: darken($dodger-color, 5%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width .7s ease-in-out;
-  }
-
-  &:hover::before {
-    width: 100%;
+  &:hover {
+    background: $dodger-color;
   }
 
   @media screen and (max-width: 768px) {
